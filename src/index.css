@@ -2,41 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Industrial Design System - Professional monitoring and control interface
+All colors MUST be HSL for semantic consistency */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core backgrounds - Clean industrial whites and subtle grays */
+    --background: 210 17% 96%;
+    --foreground: 215 25% 27%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card system - Glass morphism with subtle depth */
+    --card: 210 17% 98%;
+    --card-foreground: 215 25% 27%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover system */
+    --popover: 210 17% 98%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Industrial teal/blue for technology and reliability */
+    --primary: 200 91% 35%;
+    --primary-foreground: 210 17% 98%;
+    --primary-glow: 200 91% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Cool grays for supporting elements */
+    --secondary: 215 15% 91%;
+    --secondary-foreground: 215 25% 27%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Subtle information hierarchy */
+    --muted: 215 15% 91%;
+    --muted-foreground: 215 13% 54%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Vibrant teal for highlights and active states */
+    --accent: 190 88% 42%;
+    --accent-foreground: 210 17% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors for industrial monitoring */
+    --success: 142 76% 36%;
+    --success-foreground: 210 17% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 215 25% 27%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 17% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Interactive elements */
+    --border: 215 20% 85%;
+    --input: 215 20% 85%;
+    --ring: 200 91% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Industrial gradients for depth and sophistication */
+    --gradient-primary: linear-gradient(135deg, hsl(200 91% 35%), hsl(190 88% 42%));
+    --gradient-secondary: linear-gradient(135deg, hsl(215 15% 91%), hsl(210 17% 96%));
+    --gradient-glass: linear-gradient(135deg, hsla(210, 17%, 98%, 0.8), hsla(210, 17%, 95%, 0.6));
+    --gradient-status-good: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    --gradient-status-warning: linear-gradient(135deg, hsl(38 92% 50%), hsl(38 92% 60%));
+    --gradient-status-critical: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+
+    /* Elegant shadows for depth and premium feel */
+    --shadow-card: 0 4px 20px -2px hsla(215, 25%, 27%, 0.1);
+    --shadow-elevated: 0 8px 30px -4px hsla(215, 25%, 27%, 0.15);
+    --shadow-primary: 0 8px 25px -5px hsla(200, 91%, 35%, 0.3);
+    --shadow-glow: 0 0 40px hsla(200, 91%, 45%, 0.2);
+
+    /* Animation tokens for smooth industrial transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
